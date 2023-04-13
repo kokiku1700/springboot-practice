@@ -47,7 +47,10 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public int mbDuplicationCheck(Map<String, String> map) {
+		System.out.println("dul=ple");
 		// TODO Auto-generated method stub
+		int cnt = userMapper.mbDuplicationCheck(map);
+		System.out.println("cnt"+cnt);
 		return userMapper.mbDuplicationCheck(map);
 	}
 
